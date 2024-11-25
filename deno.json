@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {    
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "lint": {
+    "include": ["src/"],
+    "exclude": ["src/testdata/", "data/fixtures/**/*.ts"],
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"],
+      "exclude": ["no-unused-vars"]
+    }
+  },
+  "fmt": {
+    "useTabs": true,
+    "lineWidth": 80,
+    "indentWidth": 4,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/"],
+    "exclude": ["src/testdata/", "data/fixtures/**/*.ts"]
+  },
+  "lock": false,
+  "nodeModulesDir": "auto",
+  "test": {
+    "include": ["src/"],
+    "exclude": ["src/testdata/", "data/fixtures/**/*.ts"]
+  },
+  "tasks": {
+    "ex1": "deno run --allow-net --allow-read src/exercise_01.ts",
+    "ex2": "deno run --allow-net --allow-read src/exercise_02.ts",
+    "ex3": "deno run --allow-net --allow-read --allow-read src/exercise_03.ts",
+    "ex4": "deno run --allow-net --allow-read --allow-read src/exercise_04.ts",
+    "workshop": "deno run --allow-net --allow-read --allow-write src/workshop.ts",
+    "ex1sol": "deno run --allow-net --allow-read src/solution/exercise_01.ts",
+    "ex2sol": "deno run --allow-net --allow-read src/solution/exercise_02.ts",
+    "ex3sol": "deno run --allow-net --allow-read --allow-read src/solution/exercise_03.ts",
+    "ex4sol": "deno run --allow-net --allow-read --allow-read src/solution/exercise_04.ts",
+  },
+  "imports": {
+    "dotenv": "https://deno.land/std@0.208.0/dotenv/mod.ts",
+    "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+    "file_server": "https://deno.land/std@0.207.0/http/file_server.ts"
+  }
+}
