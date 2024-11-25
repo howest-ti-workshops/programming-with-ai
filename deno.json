@@ -37,7 +37,7 @@
     "ex1sol": "deno run --allow-net --allow-read src/solution/exercise_01.ts",
     "ex2sol": "deno run --allow-net --allow-read src/solution/exercise_02.ts",
     "ex3sol": "deno run --allow-net --allow-read --allow-read src/solution/exercise_03.ts",
-    "ex4sol": "deno run --allow-net --allow-read --allow-read src/solution/exercise_04.ts",
+    "ex4sol": "deno run --allow-net --allow-read --allow-read src/solution/exercise_04.ts"
   },
   "imports": {
     "dotenv": "https://deno.land/std@0.208.0/dotenv/mod.ts",
