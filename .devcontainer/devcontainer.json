@@ -1,7 +1,7 @@
 {
 	"name": "Deno",
 	"build": { "dockerfile": "Dockerfile" },
-	"hostRequirements": { "cpus": 4},
+	"hostRequirements": { "cpus": 2},
 	"customizations": {
 		"vscode": {
 			"extensions": [
